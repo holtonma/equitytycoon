@@ -1,1 +1,10 @@
-yo login
+
+<% form_tag '/home' do |f| -%>
+  <p class="login"><%= label_tag 'E-mail Address:' %></p>
+  <p class="login"><%= text_field_tag 'email', nil, :size => 20, :class => 'login' %></p>
+  <p class="login"><%= label_tag 'Password:' %></p>
+	<p class="login"><%= password_field_tag(name = "password", value = nil, :class => 'login') %></p>
+	<p class="login"><%= submit_tag 'Login' %></p>
+	<p class="login" align="center">or</p>
+	<div id="signup_home"><a href="">Sign Up Here</a></div>
+<% end -%>

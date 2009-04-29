@@ -1,0 +1,10 @@
+
+p.login {margin: 0px; padding:0px;}
+input.login {margin-bottom: 8px;}
+div#login {border:2px solid #003300; display:block;float:left;padding:8px;}
+div#signup_home {font-size:xx-large;}
+
+div#sample {border:2px solid #003300; display:block;float:left;padding:8px;}
+div#leaders {border:2px solid #003300; display:block;float:left;padding:8px;}
+
+div#disclaimer {clear:both;}
