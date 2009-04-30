@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090430000203) do
+ActiveRecord::Schema.define(:version => 20090430002741) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(:version => 20090430000203) do
     t.integer  "cost_basis"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "porfolio_id"
+    t.integer  "portfolio_id"
   end
 
   create_table "portfolios", :force => true do |t|
