@@ -1,0 +1,23 @@
+<p>
+  <b>Symbol:</b>
+  <%=h @asset.symbol %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @asset.name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @asset.type_id %>
+</p>
+
+<p>
+  <b>Current price:</b>
+  <%=h @asset.current_price %>
+</p>
+
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>

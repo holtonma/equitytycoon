@@ -1,0 +1,33 @@
+<p>
+  <b>User:</b>
+  <%=h @portfolio_item.user_id %>
+</p>
+
+<p>
+  <b>Asset:</b>
+  <%=h @portfolio_item.asset_id %>
+</p>
+
+<p>
+  <b>Qty:</b>
+  <%=h @portfolio_item.qty %>
+</p>
+
+<p>
+  <b>Purchased date:</b>
+  <%=h @portfolio_item.purchased_date %>
+</p>
+
+<p>
+  <b>Transaction fee:</b>
+  <%=h @portfolio_item.transaction_fee %>
+</p>
+
+<p>
+  <b>Cost basis:</b>
+  <%=h @portfolio_item.cost_basis %>
+</p>
+
+
+<%= link_to 'Edit', edit_portfolio_item_path(@portfolio_item) %> |
+<%= link_to 'Back', portfolio_items_path %>

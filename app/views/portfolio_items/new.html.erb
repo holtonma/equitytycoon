@@ -1,0 +1,35 @@
+<h1>New portfolio_item</h1>
+
+<% form_for(@portfolio_item) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :asset_id %><br />
+    <%= f.text_field :asset_id %>
+  </p>
+  <p>
+    <%= f.label :qty %><br />
+    <%= f.text_field :qty %>
+  </p>
+  <p>
+    <%= f.label :purchased_date %><br />
+    <%= f.datetime_select :purchased_date %>
+  </p>
+  <p>
+    <%= f.label :transaction_fee %><br />
+    <%= f.text_field :transaction_fee %>
+  </p>
+  <p>
+    <%= f.label :cost_basis %><br />
+    <%= f.text_field :cost_basis %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', portfolio_items_path %>

@@ -1,0 +1,20 @@
+<h1>Listing asset_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @asset_types.each do |asset_type| %>
+  <tr>
+    <td><%=h asset_type.name %></td>
+    <td><%= link_to 'Show', asset_type %></td>
+    <td><%= link_to 'Edit', edit_asset_type_path(asset_type) %></td>
+    <td><%= link_to 'Destroy', asset_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New asset_type', new_asset_type_path %>

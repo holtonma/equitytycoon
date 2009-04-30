@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  asset_id: 1
+  qty: 1
+  purchased_date: 2009-04-29 17:01:17
+  transaction_fee: 1
+  cost_basis: 1
+
+two:
+  user_id: 1
+  asset_id: 1
+  qty: 1
+  purchased_date: 2009-04-29 17:01:17
+  transaction_fee: 1
+  cost_basis: 1

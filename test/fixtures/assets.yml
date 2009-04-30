@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  symbol: MyString
+  name: MyString
+  type_id: 1
+  current_price: 1
+
+two:
+  symbol: MyString
+  name: MyString
+  type_id: 1
+  current_price: 1

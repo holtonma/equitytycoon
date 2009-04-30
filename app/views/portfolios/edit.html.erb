@@ -1,0 +1,40 @@
+<h1>Editing portfolio</h1>
+
+<% form_for(@portfolio) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :created %><br />
+    <%= f.datetime_select :created %>
+  </p>
+  <p>
+    <%= f.label :start_value %><br />
+    <%= f.text_field :start_value %>
+  </p>
+  <p>
+    <%= f.label :current_value %><br />
+    <%= f.text_field :current_value %>
+  </p>
+  <p>
+    <%= f.label :value_last_updated %><br />
+    <%= f.datetime_select :value_last_updated %>
+  </p>
+  <p>
+    <%= f.label :active %><br />
+    <%= f.text_field :active %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @portfolio %> |
+<%= link_to 'Back', portfolios_path %>

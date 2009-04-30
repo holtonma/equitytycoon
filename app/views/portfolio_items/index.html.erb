@@ -1,0 +1,30 @@
+<h1>Listing portfolio_items</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Asset</th>
+    <th>Qty</th>
+    <th>Purchased date</th>
+    <th>Transaction fee</th>
+    <th>Cost basis</th>
+  </tr>
+
+<% @portfolio_items.each do |portfolio_item| %>
+  <tr>
+    <td><%=h portfolio_item.user_id %></td>
+    <td><%=h portfolio_item.asset_id %></td>
+    <td><%=h portfolio_item.qty %></td>
+    <td><%=h portfolio_item.purchased_date %></td>
+    <td><%=h portfolio_item.transaction_fee %></td>
+    <td><%=h portfolio_item.cost_basis %></td>
+    <td><%= link_to 'Show', portfolio_item %></td>
+    <td><%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %></td>
+    <td><%= link_to 'Destroy', portfolio_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New portfolio_item', new_portfolio_item_path %>

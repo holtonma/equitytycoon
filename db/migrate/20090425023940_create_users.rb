@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :fname
       t.string :lname
       t.string :email
-      t.boolean :active
+      t.integer :active
 
       t.timestamps
     end

@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @portfolio.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @portfolio.user_id %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%=h @portfolio.created %>
+</p>
+
+<p>
+  <b>Start value:</b>
+  <%=h @portfolio.start_value %>
+</p>
+
+<p>
+  <b>Current value:</b>
+  <%=h @portfolio.current_value %>
+</p>
+
+<p>
+  <b>Value last updated:</b>
+  <%=h @portfolio.value_last_updated %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%=h @portfolio.active %>
+</p>
+
+
+<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+<%= link_to 'Back', portfolios_path %>
