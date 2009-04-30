@@ -1,19 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  user_id: 1
+  name: Mark's Portfolio
+  user_id: holton
   created: 2009-04-29 17:01:04
-  start_value: 1
-  current_value: 1
+  start_value: 10_000_000
+  current_value: 10_000_000
   value_last_updated: 2009-04-29 17:01:04
   active: 1
 
 two:
-  name: MyString
-  user_id: 1
+  name: Paul's Port
+  user_id: spencer
   created: 2009-04-29 17:01:04
-  start_value: 1
-  current_value: 1
+  start_value: 12_000_000
+  current_value: 12_000_000
   value_last_updated: 2009-04-29 17:01:04
   active: 1

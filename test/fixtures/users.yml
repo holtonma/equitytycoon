@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  fname: MyString
-  lname: MyString
-  email: MyString
-  active: false
+holton:
+  fname: Mark
+  lname: Holton
+  email: holtonma@gmail.com
+  active: true
 
-two:
-  fname: MyString
-  lname: MyString
-  email: MyString
-  active: false
+spencer:
+  fname: Paul
+  lname: Spencer
+  email: spencepd@gmail.com
+  active: true

@@ -1,13 +1,12 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  symbol: MyString
-  name: MyString
+petrol:
+  symbol: pbr
+  name: Brazil Petro
   type_id: 1
-  current_price: 1
+  current_price: 1234
 
-two:
-  symbol: MyString
-  name: MyString
+apple:
+  symbol: aapl
+  name: Apple Inc.
   type_id: 1
-  current_price: 1
+  current_price: 2455

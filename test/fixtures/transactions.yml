@@ -1,19 +1,19 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  user_id: 1
-  portfolio_id: 1
-  qty: 1
+  user_id: holton
+  portfolio_id: one
+  qty: 42
   date: 2009-04-29 17:01:28
   action_id: 1
   transaction_fee: 1
-  asset_id: 1
+  asset_id: aaple
 
 two:
-  user_id: 1
-  portfolio_id: 1
-  qty: 1
+  user_id: holton
+  portfolio_id: one
+  qty: 23
   date: 2009-04-29 17:01:28
   action_id: 1
   transaction_fee: 1
-  asset_id: 1
+  asset_id: petrol
