@@ -1,3 +1,3 @@
 class AssetType < ActiveRecord::Base
-  belongs_to :assets
+  has_many :assets
 end
