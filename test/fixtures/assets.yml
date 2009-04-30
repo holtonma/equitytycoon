@@ -1,12 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
 petrol:
+  id: 1
   symbol: pbr
   name: Brazil Petro
-  type_id: 1
+  asset_type_id: 1
   current_price: 1234
 
 apple:
+  id: 2
   symbol: aapl
   name: Apple Inc.
-  type_id: 1
+  asset_type_id: 1
   current_price: 2455
