@@ -1,6 +1,9 @@
 <html>
   <head>
     <%= stylesheet_link_tag 'et' %>
+		<!--[if lte IE 6]>
+		<%= stylesheet_link_tag 'ie6' %>
+		<![endif]-->
 		<%= javascript_include_tag 'prototype' %>
     <%= yield :header %>
     <title>
@@ -17,15 +20,30 @@
     <% end %>
   </head>
   <body id="et_home">
-    <div class="logo">
-      <span><a href="/"><%= image_tag('et_logo.png') %></a></span>
-      <span><h1>Equity Tycoon</h1></span>
-			<span>Real Time Stocks &amp; Bonds Tracking for Learning and Fun</span>
-    </div>
-    <div class="body">
+		<div id="wrap">
+    	<div class="logo" id="header">
+	      <span><a href="/"><%= image_tag('et_logo.png') %></a></span>
+	      <div id="site-name">Equity Tycoon <span id="subtext">Learn, Play, Invest.</span></div>
+				<div id="search">
+					<form action="">
+					<label for="search_stock">Lookup Stock:</label>
+					<input id="search_stock" name="search_stock" type="text" />
+					<input type="submit" value="Go" class="f-submit" />
+					</form>
+				</div>
+				<ul id="nav">
+			    <li class="first active" id="home"><%= link_to('Home', :controller => 'home', :action => 'index') %></li>
+			    <li id="teachers"><%= link_to('Teachers', :controller => 'home', :action => 'index') %></li>
+					<li id="friends"><%= link_to('Friends', :controller => 'home', :action => 'index') %></li>
+					<li class="last" id="leaderboard"><%= link_to('Leaderboard', :controller => 'home', :action => 'index') %></li>
+			  </ul>
+				<!-- <span id="subtext2">Real Time Stocks &amp; Bonds Tracking for Learning and Fun</span> -->
+	    </div>
+
+    <div id="content-wrap">
       <%= yield %>
     </div>
-    <div class="footer"></div>
+
   </body>
 </html>
 
