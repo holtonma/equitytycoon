@@ -1,3 +1,6 @@
+<%= render(:partial => 'layouts/tabs', :locals => {:tab_name => "portfolio"}) %>
+<div id="content-wrap">
+	
 <h1>Editing portfolio</h1>
 
 <% form_for(@portfolio) do |f| %>
@@ -38,3 +41,5 @@
 
 <%= link_to 'Show', @portfolio %> |
 <%= link_to 'Back', portfolios_path %>
+
+</div>

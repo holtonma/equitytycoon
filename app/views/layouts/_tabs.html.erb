@@ -1,8 +1,19 @@
+
 <div class="tabs">
   <ul id="nav">
-    <li class="first active" id="home"><%= link_to('Home', :controller => 'home', :action => 'index') %></li>
-    <li id="teachers"><%= link_to('Teachers', :controller => 'home', :action => 'index') %></li>
-		<li id="friends"><%= link_to('Friends', :controller => 'home', :action => 'index') %></li>
-		<li class="last" id="leaderboard"><%= link_to('Leaderboard', :controller => 'home', :action => 'index') %></li>
+    <li class="first <% if tab_name == 'home'%>active<% end %>" id="home" >
+			<%= link_to('Home', :controller => 'home', :action => 'index') %>
+		</li>
+    <li class="<% if tab_name == 'portfolio'%>active<% end %>" id="portfolios">
+			<%= link_to('Portfolios', :controller => 'portfolios', :action => 'index') %>
+		</li>
+		<li class="<% if tab_name == 'group'%>active<% end %>" id="groups">
+		  <%= link_to('Groups', :controller => 'home', :action => 'index') %>
+		</li>
+		<li class="last <% if tab_name == 'leaderboard'%>active<% end %>" id="leaderboard">
+		  <%= link_to('Leaderboard', :controller => 'home', :action => 'index') %>
+		</li>
   </ul>
 </div>
+
+</div> <!-- end header div -->

@@ -1,3 +1,8 @@
+
+<%= render(:partial => 'layouts/tabs', :locals => {:tab_name => "portfolio"}) %>
+<!-- <span id="subtext2">Real Time Stocks &amp; Bonds Tracking for Learning and Fun</span> -->
+
+<div id="content-wrap">
 <p>
   <b>Name:</b>
   <%=h @portfolio.name %>
@@ -33,6 +38,7 @@
   <%=h @portfolio.active %>
 </p>
 
-
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>
+
+</div>

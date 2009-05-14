@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+	layout "application"
   # GET /portfolios
   # GET /portfolios.xml
   def index
@@ -13,6 +14,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1
   # GET /portfolios/1.xml
   def show
+	  # before filter, check login or public (later)
     @portfolio = Portfolio.find(params[:id])
 
     respond_to do |format|

@@ -1,19 +1,20 @@
+<%= render(:partial => 'layouts/tabs', :locals => {:tab_name => "home"}) %>
 
+<div id="content-wrap">
 	
-		<div id="utility"><%= render(:partial => 'home/login') %></div>
-		<div id="content">
-			<%= render(:partial => 'home/sample_port') %>
-			<div id="footer">
-				<p>While Equity Tycoon gives you real-time data, this site deals with fake dollars only, and is not to be used for gambling purposes, but as a   fun and educational tool</p>
-				<p><a href="#">Contact Us</a> | <a href="#">Privacy</a> | <a href="#">Links</a></p>
-			</div>	
-		</div>
-		<div id="sidebar"><%= render(:partial => 'home/leaders') %></div>
+	<div id="utility"><%= render(:partial => 'home/login') %></div>
+	<div id="content">
+		<%= render(:partial => 'home/sample_port') %>
+		<div id="footer">
+			<p>While Equity Tycoon gives you real-time data, this site deals with fake dollars only, and is not to be used for gambling purposes, but as a   fun and educational tool</p>
+			<p><a href="#">Contact Us</a> | <a href="#">Privacy</a> | <a href="#">Links</a></p>
+		</div>	
 	</div>
-
+	<div id="sidebar"><%= render(:partial => 'home/leaders') %></div>
+	</div>
 	<hr />
+
+</div>
 	
 
-
-<%= render(:partial => 'layouts/footer')%>
 

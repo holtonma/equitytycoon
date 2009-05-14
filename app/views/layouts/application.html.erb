@@ -31,18 +31,10 @@
 					<input type="submit" value="Go" class="f-submit" />
 					</form>
 				</div>
-				<ul id="nav">
-			    <li class="first active" id="home"><%= link_to('Home', :controller => 'home', :action => 'index') %></li>
-			    <li id="teachers"><%= link_to('Teachers', :controller => 'home', :action => 'index') %></li>
-					<li id="friends"><%= link_to('Friends', :controller => 'home', :action => 'index') %></li>
-					<li class="last" id="leaderboard"><%= link_to('Leaderboard', :controller => 'home', :action => 'index') %></li>
-			  </ul>
-				<!-- <span id="subtext2">Real Time Stocks &amp; Bonds Tracking for Learning and Fun</span> -->
-	    </div>
+				
+				<%= yield %>
 
-    <div id="content-wrap">
-      <%= yield %>
-    </div>
+    		<%= render(:partial => 'layouts/footer')%>
 
   </body>
 </html>
