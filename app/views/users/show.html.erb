@@ -18,6 +18,35 @@
   <%=h @user.active %>
 </p>
 
+<p>
+  <b>Created at:</b>
+  <%=h @user.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @user.updated_at %>
+</p>
+
+<p>
+  <b>Crypted Password:</b>
+  <%=h @user.crypted_password %>
+</p>
+
+<p>
+  <b>Salt:</b>
+  <%=h @user.salt %>
+</p>
+
+<p>
+  <b>Activation Code:</b>
+  <%=h @user.activation_code %>
+</p>
+
+<p>
+  <b>Status (state):</b>
+  <%=h @user.state %>
+</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
