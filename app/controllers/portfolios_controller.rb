@@ -3,7 +3,7 @@ class PortfoliosController < ApplicationController
   # GET /portfolios
   # GET /portfolios.xml
   def index
-    @portfolios = Portfolio.all
+    @portfolios = Portfolio.find(:all)
 
     respond_to do |format|
       format.html # index.html.erb
