@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge]
   
 
-  # render new.html.erb
+  # render new.rhtml
   def new
     @user = User.new
   end
@@ -38,7 +38,8 @@ class UsersController < ApplicationController
       end
     end
   end
- 
+
+	
   def create
     logout_keeping_session!
     @user = User.new(params[:user])
