@@ -3,6 +3,7 @@
 class User < ActiveRecord::Base
 	has_many :portfolios
 	has_many :transactions
+	
   # include Authentication
   # include Authentication::ByPassword
   # include Authentication::ByCookieToken
