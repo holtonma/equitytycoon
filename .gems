@@ -1,2 +1,1 @@
 rubyist-aasm --version '>= 2.0.5' --source http://gems.github.com
-rubyist-aasm --source git://github.com/rubyist/aasm.git
